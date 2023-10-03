@@ -15,7 +15,7 @@
   --font: "Inter", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
-  --primary-color: #3056d3;
+  --primary-color: #0077b6;
   --white: #ffffff;
 }
 
@@ -643,6 +643,7 @@ p {
 .ud-hero-image img {
   max-width: 100%;
   text-align: center;
+  border-radius: 15px 15px 0 0;
 }
 
 .ud-hero-image .shape {
@@ -898,8 +899,8 @@ p {
 }
 
 .ud-single-pricing.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3056d3), to(#179bee));
-  background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0077b6), to(#009aeb));
+  background: linear-gradient(180deg, #0077b6 0%, #009aeb 100%);
   border: none;
   padding: 55px 30px;
 }
@@ -2611,3 +2612,8 @@ p {
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
+
+.ud-single-pricing.last-item.wow.fadeInUp,
+.ud-single-pricing.first-item.wow.fadeInUp {
+  filter: blur(9px);
+}
