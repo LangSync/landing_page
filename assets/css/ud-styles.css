@@ -2617,3 +2617,21 @@ p {
 .ud-single-pricing.first-item.wow.fadeInUp {
   filter: blur(9px);
 }
+
+
+.title-div {
+  position: relative;
+}
+
+.title-div div {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: var(--primary-color);
+  font-size: 13px;
+  opacity: 0.9;
+}
