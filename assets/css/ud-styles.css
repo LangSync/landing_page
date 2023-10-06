@@ -2635,3 +2635,12 @@ p {
   font-size: 13px;
   opacity: 0.9;
 }
+
+.product-hunt {
+  color: #ff6154 !important;
+      font-size: 25px;
+          background: white;
+            border-radius: 100%;
+cursor: pointer;
+          }
+
