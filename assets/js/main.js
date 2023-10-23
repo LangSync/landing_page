@@ -91,3 +91,116 @@
     scrollTo(document.documentElement);
   };
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  // append <img> tags to a div based on assets/ folder.
+  const firsttargetDivContainer = document.querySelector(".logo-slider-1");
+  const secondtargetDivContainer = document.querySelector(".logo-slider-2");
+
+  const imgPath = "./assets/images/frameworks/";
+
+  let imagesList = {
+    asp: "net.png",
+    android: "android.png",
+    angular: "angular.png",
+    arduino: "arduino.png",
+    bash: "bash.png",
+    "c#": "csharp.png",
+    // django: "django.png",
+    electron: "electron.png",
+    ember: "ember.png",
+    flutter: "flutter.png",
+    ionic: "ionic.png",
+    iOS: "iOS.png",
+    javascript: "javascript.png",
+    kotlin: "kotlin.png",
+    laravel: "laravel.png",
+    nextjs: "next.js.png",
+    nodejs: "node.js.png",
+    nuxtjs: "nuxt.png",
+    php: "php.png",
+    python: "python.png",
+    qt: "qt.png",
+    reactjs: "react.png",
+    rust: "rust.png",
+    rubyOnRails: "ruby-on-rails.png",
+    spring: "spring-boot.png",
+    svelte: "svelte.png",
+    swift: "swift.png",
+    tauri: "tauri.png",
+    unity: "unity.png",
+    unreal: "unreal.png",
+    vuejs: "vue.png",
+
+
+  };
+
+  // shuffle the images ojbject to two other objects.
+  const shuffled = Object.fromEntries(
+    Object.entries(imagesList).sort(() => Math.random() - 0.5)
+  );
+
+  const imagesList1 = Object.fromEntries(
+    Object.entries(shuffled).slice(0, 9)
+  );
+  const imagesList2 = Object.fromEntries(
+    Object.entries(shuffled).slice(9, 18)
+  );
+
+
+
+
+  for (const [key, value] of Object.entries(imagesList1)) {
+    const div = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = imgPath + value;
+    img.alt = key;
+    img.title = key;
+    div.appendChild(img);
+    firsttargetDivContainer.appendChild(div);
+  }
+
+  for (const [key, value] of Object.entries(imagesList2)) {
+    const div = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = imgPath + value;
+    img.alt = key;
+    img.title = key;
+    div.appendChild(img);
+    secondtargetDivContainer.appendChild(div);
+  }
+
+});
+
+$(document).ready(function () {
+  $('.logo-slider-1').slick({
+    infinite: true,
+    slidesToShow: 5,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 1500,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    accessibility: false,
+    arrows: false,
+    draggable: false,
+    swipe: false,
+    rtl: true
+
+  });
+
+  $('.logo-slider-2').slick({
+    infinite: true,
+    slidesToShow: 5,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 1500,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    accessibility: false,
+    arrows: false,
+    draggable: false,
+    swipe: false,
+  });
+
+});
