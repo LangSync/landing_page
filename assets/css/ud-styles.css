@@ -651,12 +651,13 @@ p {
   text-align: center;
   position: relative;
   z-index: 1;
+  margin-bottom: 13px;
 }
 
 .ud-hero-image img {
   max-width: 100%;
   text-align: center;
-  border-radius: 15px 15px 0 0;
+  border-radius: 10px;
 }
 
 .ud-hero-image .shape {

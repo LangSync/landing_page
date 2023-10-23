@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     asp: "net.png",
     android: "android.png",
     angular: "angular.png",
-    arduino: "arduino.png",
+    // arduino: "arduino.png",
     bash: "bash.png",
     "c#": "csharp.png",
     // django: "django.png",
