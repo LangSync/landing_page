@@ -1173,6 +1173,9 @@ p {
   margin-right: 20px;
 }
 
+.ud-testimonial-image {
+  opacity: 0.5;
+}
 .ud-single-testimonial .ud-testimonial-info .ud-testimonial-meta h4 {
   font-weight: 600;
   font-size: 14px;
