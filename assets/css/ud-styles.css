@@ -235,7 +235,9 @@ p {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-
+b {
+  color: rgb(39, 39, 39);
+}
 .navbar-brand {
   padding: 0;
 }
@@ -990,6 +992,7 @@ p {
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 18px;
+  text-align: left;
 }
 
 .ud-single-pricing .ud-main-btn {
@@ -2714,4 +2717,17 @@ p {
   100% {
     scale: 1;
   }
+}
+
+.green-icon {
+  color: #095f1a;
+}
+
+.white-icon {
+  color: #fff;
+}
+
+.list-style-icon {
+  font-size: 15.5px;
+  margin-right: 5px;
 }
