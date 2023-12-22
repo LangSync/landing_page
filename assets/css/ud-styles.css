@@ -235,9 +235,7 @@ p {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-b {
-  color: rgb(39, 39, 39);
-}
+
 .navbar-brand {
   padding: 0;
 }
